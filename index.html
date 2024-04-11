@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <div class="alarm_time ">Add Alarm</div>
+
+        <div class="process">
+        <div class="or24_12">12 or 24 hour system
+            <form name="form2">
+                <select name="selected" class="or24_12content" >
+                <option>12</option>
+                <option>24</option>
+                </select>
+            </form>
+        </div>
+        <!-- today, tommorrow -->
+        <div class="flex"><input type="number" min="0" max="24" class="hour" placeholder="hour">
+        <input type="number" class="minute"  min="0" max="60" placeholder="minutes">
+
+        <!-- <div class="amPM"></div> -->
+        <form name="form1" >
+            <select name="selected" onsubmit="getSelected()" class="AM-PM">
+                <option>AM</option>
+                <option>PM</option>
+            </select>
+        </form>
+    </div>
+
+        <div class="remHide "></div>
+
+        <div class="submit" value="submit" onsubmit="submited()">Submit</div>
+    </div>
+
+    <div class="alarmStack">
+        <!-- <li>2:30</li>
+        <li>2:30</li>
+        <li>2:30</li>
+        <li>2:30</li> -->
+    </div>
+
+        
+        <script src="appFunction.js" async defer></script>
+    </body>
+</html>
